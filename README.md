@@ -1,4 +1,4 @@
 # 91days-of-python
-1Writer: Ujjwal Sharma
+Writer: Ujjwal Sharma
 Postion" Self Learner
 
