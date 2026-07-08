@@ -36,3 +36,17 @@ def show(n):
     show(n-1)
 
 show(12)
+
+# currency converter 
+def currency_converter(amount, rate):
+    converted_amount = round (amount * rate)
+    return converted_amount
+
+currency = input("Enter the currency you want to convert to (USD or  EUR): ")
+amount = float(input("Enter the the amount you want to convert into INR: "))
+if currency == "USD":
+    rate= 95
+elif currency == "EUR":
+    rate= 108
+print(f" {currency} is: {currency_converter(amount, rate)}")
+print (" Remember \n This amount is a rounded off value \n An approximate value")
