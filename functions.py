@@ -50,3 +50,11 @@ elif currency == "EUR":
     rate= 108
 print(f" {currency} is: {currency_converter(amount, rate)}")
 print (" Remember \n This amount is a rounded off value \n An approximate value")
+
+#call stack
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        return n*fact(n-1)
+    
