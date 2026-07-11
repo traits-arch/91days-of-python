@@ -67,3 +67,24 @@ def calc_sum(n):
 sum= calc_sum(5)
 print("The sum of numbers till n is : ",sum)
     
+#proper calculator
+import time
+print("We will perform Calculations now")
+time.sleep(2)
+def calculator(num1, num2, operator):
+    if operator == "+":
+        return num1 + num2
+    elif operator == "-":
+        return num1 - num2
+    elif operator == "*":
+        return num1 * num2
+    elif operator == "/":
+        return num1 / num2
+    else:
+        return "Invalid operator"
+    
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operator = input("Enter the operator (+, -, *, /): ")
+result = calculator(num1, num2, operator)
+print("Result:", result)
