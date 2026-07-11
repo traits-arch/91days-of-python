@@ -53,6 +53,16 @@ number2= int(input("And whats the second one?: "))
 sum= number1+number2
 print("Here you go , its", sum )
 
+#madlibs
+print(f"welcome to madlibs game \n")
+adjective = input("Enter an adjective: ")
+verb = input("Enter a verb: ")
+noun1 = input("Enter a noun: ")
+adjective2 = input("Enter another adjective: ")
+
+print(f"Today I went to the zoo. I saw a(n) {adjective} {noun1} jumping up and down in its tree. It was {verb} through the large tunnel while I was {adjective2} and watching it. ")
+
+
 #programme2
 print("What if we just find the area of the rectangle")
 print("Ready?")
