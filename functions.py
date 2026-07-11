@@ -79,7 +79,7 @@ def calculator(num1, num2, operator):
     elif operator == "*":
         return num1 * num2
     elif operator == "/":
-        return num1 / num2
+        return round(num1 / num2 )
     else:
         return "Invalid operator"
     
