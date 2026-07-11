@@ -88,3 +88,17 @@ num2 = float(input("Enter the second number: "))
 operator = input("Enter the operator (+, -, *, /): ")
 result = calculator(num1, num2, operator)
 print("Result:", result)
+
+#temperature converter
+def temp_convt(temp, unit):
+    if unit == "C" or unit == "c":
+        return(temp * 9/5 + 32)
+    elif unit == "F" or unit == "f":
+        return (temp - 32) * 5/9
+    else:
+        print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+
+temp= float(input("Enter the temperature you have: "))
+unit= input("And Whats the unit you want to convert into? (C or F): ")
+final_temp= temp_convt(temp, unit)
+print(f"Your temperature is: {round(final_temp, 2)} {unit.upper()}")
