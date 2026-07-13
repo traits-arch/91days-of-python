@@ -119,3 +119,7 @@ for b in range (7, 70, 7):
 #programme 9
 for c in range(100, 1, 1):
     print(c)
+
+#using shortcuts 
+num = int(input("Enter a number to check if its positive or negative: "))
+print ("Postive number" if num>0 else "Negative number")
