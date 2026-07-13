@@ -52,3 +52,17 @@ print("ohh so you name is of", len(user_name), " letters")
 #programme2
 symbols_write= str(input("so put some dollar symbols and let me guess how many they are: "))
 print("so there's", symbols_write.count("$"), "number of dollars")
+
+# validation of username
+user_name= input("Enter your username: ")
+if len(user_name)>12:
+    print("username is too long")
+elif len(user_name)<6:
+    print("username is too short")
+elif type(user_name)==int:
+    print("username cannot be a number")
+elif user_name.isalpha()==False:
+    print("username cannot contain symbols")
+else:
+    print(user_name, "is set to be your username")     
+    
