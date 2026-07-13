@@ -123,3 +123,9 @@ for c in range(100, 1, 1):
 #using shortcuts 
 num = int(input("Enter a number to check if its positive or negative: "))
 print ("Postive number" if num>0 else "Negative number")
+
+# minimum of two numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+min_num = a if a < b else b
+print("The minimum number is:", min_num)
