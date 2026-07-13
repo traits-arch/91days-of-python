@@ -1,7 +1,7 @@
 str1 ='its a string......, not the next line '
 str2= "anotherstring"
 str3= """yepp , this too"""
-str4= "heloo evryone \n its the next line"
+str4= "heloo everyone \n its the next line"
 print(str1)
 print(str4)
 str5= str1+str4
@@ -35,8 +35,8 @@ print(string)
 string= string.capitalize() #now they hold the same value
 print(string)
 #replace
-string2= "it as really fun"
-print(string2.replace("a", "i"))# ("old", "new")
+string2= "it is reilly fun"
+print(string2.replace("i", "a"))# ("old", "new")
 #find
 string3= "its cool again"
 print(string3.find("cool"))
