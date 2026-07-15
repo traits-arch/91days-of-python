@@ -10,6 +10,7 @@ e= int(input("Give us your marks in pbi: "))
 
 cal_avg(q,w,e)
 
+print("The popular cities in Pakistan are: ")
 cities= ['karachi','lahore','islamabad','quetta','peshawar']
 
 def print_length(cities):
@@ -24,11 +25,15 @@ def odd_even(num):
         print(num,"is even")
     else:
         print(num,"is odd")
-
+import time
+time.sleep(1)
 num = int(input("Enter a number to check if its odd or even: "))
 odd_even(num)
+time.sleep(1)
 
 #recursion
+print("Recursion is a function that calls itself")
+time.sleep(1)
 def show(n):
     if n==0:
         return 
@@ -36,12 +41,11 @@ def show(n):
     show(n-1)
 
 show(12)
-
+time.sleep(1)
 # currency converter 
 def currency_converter(amount, rate):
     converted_amount = round (amount * rate)
     return converted_amount
-
 currency = input("Enter the currency you want to convert to (USD or  EUR): ")
 amount = float(input("Enter the the amount you want to convert into INR: "))
 if currency == "USD":
@@ -50,14 +54,16 @@ elif currency == "EUR":
     rate= 108
 print(f" {currency} is: {currency_converter(amount, rate)}")
 print (" Remember \n This amount is a rounded off value \n An approximate value")
+time.sleep(1)
 
 #call stack
+print("Now we will use call stack to find the factorial of a number")
 def fact(n):
     if n==0 or n==1:
         return 1
     else:
         return n*fact(n-1)
-    
+time.sleep(1)
 def calc_sum(n):
     if n==0:
         return 0 
@@ -102,3 +108,17 @@ temp= float(input("Enter the temperature you have: "))
 unit= input("And Whats the unit you want to convert into? (C or F): ")
 final_temp= temp_convt(temp, unit)
 print(f"Your temperature is: {round(final_temp, 2)} {unit.upper()}")
+
+def check_line():
+    word= "Have"
+    data= True
+    line= 1
+    with open("demotext.txt", "r") as f:
+        while data:
+              data = f.readline()
+              if (word in data):
+                print("Found in line", line)
+                return
+                line += 1
+    return -1
+print(check_line())
