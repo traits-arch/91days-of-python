@@ -11,6 +11,8 @@ num= random.randint(1, 100) # range of random number
 attempts=7 # total number of attempts
 while attempts>0: #keeps looping till attempts are 0
         guess= int(input("Enter your guess: "))
+        if type(guess)!=int:
+           print("Only numbers are allowed")
         if guess==num:
          print("Congratulations! You have guessed the number correctly.")
          break #stop when the right number is guessed 
