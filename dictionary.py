@@ -45,3 +45,28 @@ print(info.get("subject")) #returns none (subjects✔️)
 
 #update
 info.update({"city":"Punjab", "age":"18"})# new key & Value is added
+
+#using dict as a recordbook for a showroom
+import time
+print("All your information is stored here")
+time.sleep(1)
+records = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "owner": "Patel Mukherjee",
+  "mode of payment": "Cash"
+}
+ask= str(input("What are you looking for?: "))
+if ask in records:
+  print("Yes, ", ask ," is one of the keys in the record book")
+  print("its here as",records[ask])
+elif type(ask)!=str:
+  print("Invaild input")
+else:
+  print("No, ", ask ," doesnt exist in the record book")
+age= int(input("What age are you btw?: "))
+old= 'ohh, so u must be in highschool?' if age<18 and age>14 else  'Ohh, u must be in college then?'
+print(old)
+inquirer= str(input("Can we ask who's the person to inquire for the records?: "))
+records["Inquiry"]= inquirer
