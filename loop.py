@@ -129,3 +129,26 @@ a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 min_num = a if a < b else b
 print("The minimum number is:", min_num)
+
+#programme9
+password= "rajatpawar@1977"
+print("Morning Rajat")
+time.sleep(1)
+print("-----Welcome To The Admin Page-----")
+attempts= 3
+time.sleep(1)
+print("....You have three attempts to log in")
+time.sleep(1)
+print("--------")
+guess= input("Enter Password")
+
+while attempts>0:
+    if guess == password:
+        print("Rajat, You're in")
+    else:
+        attempts=-1
+        ("Wrong password, you have ",attempts," left to log in")
+print("You ran out of attempts, Please try again later")
+
+
+
