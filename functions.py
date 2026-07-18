@@ -17,7 +17,7 @@ def print_length(cities):
     for items in cities:
         print(items, end=" ")
 print_length(cities)
-    
+print("\n")
 
 # odd even checker
 def odd_even(num):
