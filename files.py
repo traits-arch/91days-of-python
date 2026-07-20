@@ -29,4 +29,18 @@ with open("demotext.txt", "r+") as f:
     else:
          print("Not Found")
     f.close()
-    
+#check what line
+def check_line():
+    word= str(input("Enter the word you want to search: "))
+    data= True
+    line_no=1
+    with open("demotext.txt","r") as f:
+        while data:
+            data= f.readline()
+            if(word in data):
+                print(line_no)
+                return
+            else:
+                line_no += 1
+    return -1
+print(check_line())
