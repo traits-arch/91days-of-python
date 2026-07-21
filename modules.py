@@ -19,8 +19,8 @@ def discount_calculator(price,percentage,tax):
     return 0
 print("-----discount calculator(with taxes)------")
 time.sleep(1)
-price = input("Enter the price of the item: ")
-percentage = input("Enter the discouunt percentage: ")
-tax = input("Enter the tax '%' on the unit: ")
-
+price1 = input("Enter the price of the item: ")
+percentage1 = input("Enter the discouunt percentage: ")
+tax1 = input("Enter the tax '%' on the unit: ")
+discount_calculator(price1,percentage1,tax1)
 
