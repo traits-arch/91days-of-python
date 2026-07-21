@@ -16,6 +16,7 @@ def discount_calculator(price,percentage,tax):
     amount = price-discount
     tax_percentage = discount*(tax/100)
     final= amount+tax_percentage
+    print('the final amount after the discount is; ',final)
     return 0
 print("-----discount calculator(with taxes)------")
 time.sleep(1)
