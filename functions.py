@@ -60,6 +60,16 @@ def find_max(numbers):
 my_list = [3, 7, 2, 9, 1]
 print(find_max(my_list))
 
+#genrators
+def count_up_to(n):
+  count = 1
+  while count <= n:
+    yield count
+    count += 1
+
+for num in count_up_to(5):
+  print(num)
+
 show(12)
 time.sleep(1)
 # currency converter 
