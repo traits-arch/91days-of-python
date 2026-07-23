@@ -47,7 +47,18 @@ def sum_list(numbers):
     return numbers[0] + sum_list(numbers[1:])
 
 my_list = [1, 2, 3, 4, 5]
-print(sum_list(my_list)) 
+print(sum_list(my_list))
+
+#to find the maximum number of value in a list
+def find_max(numbers):
+  if len(numbers) == 1:
+    return numbers[0]
+  else:
+    max_of_rest = find_max(numbers[1:])
+    return numbers[0] if numbers[0] > max_of_rest else max_of_rest
+
+my_list = [3, 7, 2, 9, 1]
+print(find_max(my_list))
 
 show(12)
 time.sleep(1)
