@@ -80,6 +80,12 @@ newlist = [x.upper() for x in fruits]#changes the contents of a list to uppercas
 thislist = ["apple", "banana", "cherry"]
 mylist = thislist.copy()
 print(mylist)
+#and lists can be joint too
+lists1 = ["a", "b", "c"]
+lists2 = [1, 2, 3]
+
+list3 = lists1 + lists2
+print(list3)
 #programme 1
 print("I wanna know more about you...\n  what are some movies you like?")
 fav1= str(input("Name of the movie1: "))
