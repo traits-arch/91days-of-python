@@ -74,7 +74,12 @@ fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 newlist = [x for x in fruits if "a" in x] #sorts out elements that have specific identity
 
 print(newlist)
-
+#to format a list
+newlist = [x.upper() for x in fruits]#changes the contents of a list to uppercase
+#lists can also be copied with one option
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
 #programme 1
 print("I wanna know more about you...\n  what are some movies you like?")
 fav1= str(input("Name of the movie1: "))
