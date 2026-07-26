@@ -68,6 +68,13 @@ print(tup4.count(8))
 #list can also hold boolean values
 bool_val=[True,False,True,True]
 
+#to sort elements on specific terms
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x] #sorts out elements that have specific identity
+
+print(newlist)
+
 #programme 1
 print("I wanna know more about you...\n  what are some movies you like?")
 fav1= str(input("Name of the movie1: "))
