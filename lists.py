@@ -65,6 +65,9 @@ tup4= (3,5,8,1,8,6,)
 print(tup4.index(5)) 
 print(tup4.count(8))
 
+#list can also hold boolean values
+bool_val=[True,False,True,True]
+
 #programme 1
 print("I wanna know more about you...\n  what are some movies you like?")
 fav1= str(input("Name of the movie1: "))
@@ -102,3 +105,4 @@ sorted_grades=sorted(grades)
 grades.count("A")
 print(grades.count("A"))
 print(sorted_grades)
+
