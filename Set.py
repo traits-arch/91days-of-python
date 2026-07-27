@@ -28,8 +28,23 @@ set2 = {1, 2, 3}
 set3 = {"John", "Elena"}
 set4 = {"apple", "bananas", "cherry"}
 
-myset = set1 | set2 | set3 |set4
-print(myset)
+mysset = set1 | set2 | set3 |set4
+print(mysset)
+
+#set can be used with difference 
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1.difference(set2)
+
+print(set3)
+
+#also while "-" can be used inplace of difference
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
+
+set3 = set1 - set2
+print(set3)
 
 
 #programme 1
