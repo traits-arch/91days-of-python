@@ -46,6 +46,13 @@ set2 = {"google", "microsoft", "apple"}
 set3 = set1 - set2
 print(set3)
 
+#symmetric takes up the elements that are not present in both sets
+set5 = {"apple", "banana", "cherry"}
+set6 = {"google", "microsoft", "apple"}
+
+set7 = set1.symmetric_difference(set2)
+
+print(set3)
 
 #programme 1
 dictt= {
