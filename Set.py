@@ -22,6 +22,15 @@ set2= {2,3,4,5,1}
 
 print(set1.union(set2))#gives unique
 print(set1.intersection(set2))#gives common
+#sperates the sets while printing em all at once
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1 | set2 | set3 |set4
+print(myset)
+
 
 #programme 1
 dictt= {
