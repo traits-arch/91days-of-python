@@ -97,6 +97,29 @@ def std_avg(Student):
                         print("No valid numerical marks found.")
         else:
                 print("Student not found.")
+
+def stds_topper():
+     if not stds:
+            print("No students registered yet!")
+     else:
+            topper_name = ""
+            highest_avg = -1.0
+
+            for name, info in stds.items():
+                current_avg = info.get("Average", 0)
+
+                if current_avg > highest_avg:
+                    highest_avg = current_avg
+                    topper_name = name
+
+            if highest_avg > 0:
+                print("\n👑 --- TOPPER FOUND  --- 👑")
+                time.sleep(1)
+                print(f"Name: {topper_name}")
+                print(f"Highest Average: {highest_avg:.2f}")
+            else:
+                print(
+                    "No averages found. Please calculate student averages (Option 2) first!")
 def dash():
     time.sleep(0.5)
     print("\n-----Welcome to Student Dashboard-----")
@@ -129,15 +152,13 @@ def dash():
         print("\n--- All Students ---")
         print(json.dumps(stds, indent=2))
     elif option == 5:
-        stds["Average"]
+        stds_topper()
     elif option == 6:
         print("Goodbye!")
         exit()
     else:
         print("Invalid input, Please choose between (1-6)")
 
-
-# Loop to continuously run the dashboard until you want to stop
 while True:
     dash()
     sarg = input("\n(a) Repeat or (b) Exit: ").lower()
