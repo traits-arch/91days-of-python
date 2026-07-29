@@ -15,15 +15,12 @@ def load_students():
     return {}  # Return empty dictionary if file doesn't exist yet
 
 def save_students():
-    """Saves the current global stds dictionary to the file."""
+    #Saves the current global stds dictionary to the file.
     with open(DATA_FILE, "w") as file:
         json.dump(stds, file, indent=4)
 # --- 2. INITIALIZE DATA ---
 # Load saved data
 stds = load_students()
-
-colour = "red"
-
 
 def std_add(Name):
     global stds
@@ -88,7 +85,7 @@ def std_avg(Student):
                 for subject, score in marks.items():
                         if score != "N/A":
                          total += score
-                        count += 1
+                         count += 1
                 if count > 0:
                         avg = total / count
                         print(f"The average marks for {Student} is: {avg:.2f}")
