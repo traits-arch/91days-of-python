@@ -1,0 +1,30 @@
+{
+    "Rahul": {
+        "Class: ": "12",
+        "roll no: ": "34",
+        "session: ": "2025-2026",
+        "Marks": {
+            "English: ": 98,
+            "Physics: ": 87,
+            "Chemistry: ": 85,
+            "Maths: ": 90,
+            "Biology: ": "N/A",
+            "Computer Science: ": 95
+        },
+        "Average": 91.0
+    },
+    "Pulkit": {
+        "Class: ": "11",
+        "roll no: ": "12",
+        "session: ": "2025-226",
+        "Marks": {
+            "English: ": 87,
+            "Physics: ": 80,
+            "Chemistry: ": 78,
+            "Maths: ": 89,
+            "Biology: ": "N/A",
+            "Computer Science: ": 92
+        },
+        "Average": 85.2
+    }
+}

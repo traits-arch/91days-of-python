@@ -90,6 +90,7 @@ def std_avg(Student):
                         avg = total / count
                         print(f"The average marks for {Student} is: {avg:.2f}")
                         stds[Student]["Average"]= avg
+                        save_students()
                 else:
                         print("No valid numerical marks found.")
         else:
