@@ -154,3 +154,10 @@ if attempts==0:
      time.sleep(1)
      print("....too many failed attempts,\n please try again later")
 
+#iterations 
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
