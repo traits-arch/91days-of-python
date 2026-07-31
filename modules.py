@@ -26,4 +26,9 @@ percentage1 = input("Enter the discouunt percentage: ")
 tax1 = input("Enter the tax '%' on the unit: ")
 discount_calculator(price1,percentage1,tax1)
 
+#date and time
+import datetime
+
+x = datetime.datetime.now()
+print(x)
 
