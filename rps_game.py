@@ -30,3 +30,24 @@ while True:
 
     print("\nUser choice is:", user_choice)
     print("Now it's Computer's Turn...")
+
+    #Random choice from computer
+    comp_choice = random.randint(1, 3)
+    computer_choice = choices[comp_choice - 1]
+
+    print("Computer choice is:", computer_choice)
+    print(user_choice, "vs", computer_choice)
+
+    # Determine winner
+    if choice == comp_choice:
+        print("<== It's a Tie! ==>")
+
+    elif (
+        (choice == 1 and comp_choice == 3) or
+        (choice == 2 and comp_choice == 1) or
+        (choice == 3 and comp_choice == 2)
+    ):
+        print("<== User Wins! ==>")
+
+    else:
+        print("<== Computer Wins! ==>")
