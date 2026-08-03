@@ -37,7 +37,8 @@ while True:
 
     print("Computer choice is:", computer_choice)
     print(user_choice, "vs", computer_choice)
-
+    Wins =1
+    cp_win=0
     # Determine winner
     if choice == comp_choice:
         print("<== It's a Tie! ==>")
@@ -48,23 +49,34 @@ while True:
         (choice == 3 and comp_choice == 2)
     ):
         print("<== User Wins! ==>")
+        Wins += 1
+        if Wins == 3:
+            print("You have won 3 times in a row! Congratulations!")
+            break
 
     else:
         print("<== Computer Wins! ==>")
-
+        Wins = 0
+        cp_win+= 1
 #End the game
  # Play again
     while True:
         ans = input("\nDo you want to play again? (Y/N): ").lower()
 
         if ans in ['y', 'n']:
+            got= input("Do you want to see the score? (Y/N): ").lower()
+            if got == 'y':
+                print(f"\nUser Wins: {Wins}")
+                print(f"Computer Wins: {cp_win}")
+            else:
+                print("Score not displayed.")
+
             break
 
         print("Please enter Y or N.")
 
     if ans == 'n':
         break
-
     print()
 
-print("\nThanks for playing!")
+print("\nSee You later")
