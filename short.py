@@ -31,7 +31,7 @@ while True:
         expense = input("Enter the expense description: ")
         amount = float(input("Enter the expense amount: "))
         with open("expenses.txt", "a") as file:
-            file.write(f"{expense}: ${amount:.2f}\n")
+            file.write(f"{expense}: ₹{amount:.2f}\n")
         print("Expense added successfully!\n")
     elif ans ==2:
         print("Expenses:")
