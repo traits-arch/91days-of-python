@@ -161,3 +161,34 @@ my_function("Raj")
 my_function("Neeraj")
 my_function()
 my_function("Krishna")
+
+#advancement
+def my_function(animal, name):
+  print("I have a", animal)
+  print("My", animal + "'s name is", name)
+
+my_function(animal = "dog", name = "Buddy")
+
+#usage of non local variable
+def myfunc1():
+  x = "Dhruv"
+  def myfunc2():
+    nonlocal x
+    x = "hello"
+  myfunc2()
+  return x
+
+print(myfunc1())
+#LEGB rule
+x = "global"
+
+def outer():
+  x = "enclosing"
+  def inner():
+    x = "local"
+    print("Inner:", x)
+  inner()
+  print("Outer:", x)
+
+outer()
+print("Global:", x)
