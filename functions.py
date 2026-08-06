@@ -152,3 +152,12 @@ def check_line():
                 line += 1
     return -1
 print(check_line())
+
+#assigning a function to a variable
+def my_function(name = "friend"):
+  print("Hello", name)
+
+my_function("Raj")
+my_function("Neeraj")
+my_function()
+my_function("Krishna")
