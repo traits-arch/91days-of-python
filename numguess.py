@@ -10,6 +10,7 @@ print("But dont worry you'll get hints if you are wrong")
 num= random.randint(1, 100) # range of random number
 attempts=7 # total number of attempts
 while attempts>0: #keeps looping till attempts are 0
+        score= attempts*10 #score is calculated based on attempts left
         guess= int(input("Enter your guess: "))
         if type(guess)!=int:
            print("Only numbers are allowed")
@@ -29,6 +30,18 @@ while attempts>0: #keeps looping till attempts are 0
           print(f"Sorry, you have run out of attempts. But yk what , I still will tell u the number chosen.")
           time.sleep(1)
           print("It was", num)
+        with open("hiscore.txt") as f:
+                  hiscore = f.read
+                  if(hiscore!=""):
+                      hiscore = int(hiscore)
+                  else:
+                      hiscore = 0
+        print(f"Your score is: {score}")
+        if score>hiscore:
+            print("Your Highest score is: ")
+            with open("hiscore.txt","r") as f:
+             f.write(str(score))
+        print(f"Your score is: {score}")
 feedback= input("Did you like the game? (yes/no): ") #ofc, feedback is neccessary, not that i care though
 if feedback.lower() == "yes":
    print("I'm very glad, I hope you would wanna play again soon!")
