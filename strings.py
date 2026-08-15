@@ -53,5 +53,16 @@ print("ohh so you name is of", len(user_name), " letters")
 symbols_write= str(input("so put some dollar symbols and let me guess how many they are: "))
 print("so there's", symbols_write.count("$"), "number of dollars")
 
-     
-    
+#formatting
+price1= 3.124323
+price2= -846.45
+price3= 12.34
+
+print(f"Price 1 is ${price1:.1f}")
+print(f"Price 2 is ${price1:.2f}")
+print(f"Price 3 is ${price1:.3f}")
+# > justify left
+# < justify right
+# ^ justify middle
+#10 ten spaces evenly before values
+#+, suffix

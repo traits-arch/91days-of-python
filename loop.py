@@ -180,3 +180,17 @@ print(next(myiter))
 print(next(myiter))
 print(next(myiter))
 print(next(myiter))
+
+#compound intrest calc
+principle = 0
+rate = 0
+ttime = 0
+
+while principle <= 0:
+    principle = float(input("Enter the principle (can't be less than or equal to zero)"))
+while rate <= 0:
+    rate = float(input("Enter the intrest rate (can't be less than or equal to zero)"))
+while ttime <= 0:
+    ttime = float(input("Enter the time (can't be less than or equal to zero)"))
+total = principle*pow((1+rate/100),time)
+print(f"Balance after {ttime} year/s is ${total:.2f}")
