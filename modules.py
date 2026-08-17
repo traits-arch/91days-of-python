@@ -7,7 +7,7 @@ import qrcode
 data = input("Enter the data you wish to be converted into QR: ")
 def qr_maker():
     img = qrcode.make(data)
-    img.save('C:\Users\broth\OneDrive\Desktop\python\91days-of-python\qrcode.png')
+    img.save(r"C:\Users\broth\OneDrive\Desktop\python\91days-of-python\qrcode.png")
 
 qr_maker(data)
 
@@ -30,7 +30,7 @@ discount_calculator(price1,percentage1,tax1)
 import datetime
 
 x = datetime.datetime.now()
-print(x)
+print(x) 
 
 import datetime
 
