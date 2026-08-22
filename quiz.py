@@ -3,11 +3,10 @@ print("<== Welcome to the quiz ==>")
 time.sleep(1)
 user= input("Enter your name: ")
 print(f"Hello, {user}! Let's start the quiz.")
-time.sleep(1)
 print("You will be asked 10 questions. Each correct answer will earn you 10 points.")
-global score
-score = 0
+score=0
 class ques:
+    global score
     Data={}
     q1 = input("1.What is the full form of the ISRO?:\n(a) Indian South Research Organization\n(b) Indian Space Ready Organization\n(c) Indian Space Research Organization\n(d) None of these\n Your Answer: ").lower()
     que = True
@@ -79,15 +78,25 @@ class ques:
     else:
         que = False
     Data["Question 10"] = que
-    
+print(f"Your score is: {score}")
+scr= input("Doesnt feel fair?...wanna see the evaluation?(Y/N): ").lower()
 time.sleep(1)
-print("evalualting....")
-time.sleep(1)
-for q_name,q_status in ques.Data.items():
-    if q_status == True:
-        score += 10
-        print(f"{q_name}: Right Answer! 🎉 (+10 points) | Current Score: {score}")
-    else:
-        print(f"{q_name}: Wrong Answer! ❌ (+0 points) | Current Score: {score}")
+if scr=="y":
+    print("evalualting....")
+    time.sleep(1)
+    score=0
+    for q_name,q_status in ques.Data.items():
+        if q_status == True:
+            score += 10
+            print(f"{q_name}: Right Answer! 🎉 (+10 points) | Current Score: {score}")
+        else:
+            print(f"{q_name}: Wrong Answer! ❌ (+0 points) | Current Score: {score}")
 
-print(f"\nFinal Score: {score}/100")
+    print(f"\nFinal Score: {score}/100")
+
+    exit= input("Do you want to exit now?(Y/N): ").lower()
+    if exit=="y":
+      print("goodbye")
+    else:
+      print("Wow man, I'm impressed but you'll have to rerun the file....you see")
+
