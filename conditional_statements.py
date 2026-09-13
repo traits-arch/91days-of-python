@@ -44,7 +44,7 @@ elif(b>a>c):
     print(b,a,c)
 
 # validation of username
-user_name= input("Enter your username: ")wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+user_name= input("Enter your username: ")
 if len(user_name)>12:
     print("username is too long")
 elif len(user_name)<6:
