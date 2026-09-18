@@ -199,3 +199,11 @@ def display_name(*args):
             print(arg, end=" ")
 
 display_name("Cool", "Dorothy", "James", "Delorote", "@")
+
+#kwargs let you pass multiple keyword values
+
+def print_address(**kwargs):
+    for key in kwargs.values():
+       print(key)
+
+print_address(street="vivek nagar", city="lylod", state="jharkhand", zipcode="null")
