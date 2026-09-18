@@ -192,3 +192,10 @@ def outer():
 
 outer()
 print("Global:", x)
+
+#args let you pass multiple non-key values
+def display_name(*args):
+    for arg in args:
+            print(arg, end=" ")
+
+display_name("Cool", "Dorothy", "James", "Delorote", "@")
