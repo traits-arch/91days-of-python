@@ -70,3 +70,38 @@ old= 'ohh, so u must be in highschool?' if age<18 and age>14 else  'Ohh, u must 
 print(old)
 inquirer= str(input("Can we ask who's the person to inquire for the records?: "))
 records["Inquiry"]= inquirer
+
+menu = {
+   "pizza": 150,
+   "burger": 100,
+   "pasta": 120,
+   "soda": 50,
+   "fries": 80,
+   "salad": 90,
+   "noodles":110,
+   "ice cream": 70
+}
+order = []
+total = 0
+print("--Welcome to our restaurant! Here's our menu:--")
+for key, value in menu.items():
+    print(f"{key:10} : Rp {value:.2f}")
+print("-------------------------------")
+while True:
+    item = input(str("Select the item you want to order (or type 'done' to finish): ").lower())
+    if item == 'done':
+        break
+    elif item in menu and item not in order:
+        order.append(item)
+        total += menu[item]
+        print(f"{item} added to your order. Current total: Rp {total:.2f}")
+    elif item in order:
+        print(f"{item} is already in your order. Please select a different item.")
+    else:
+        print(f"{item} is not on the menu. Please select a valid item.")
+print("-------------------------------")
+if order:
+    print("Your order summary:")
+    for item in order:
+        print(f"{item:10} : Rp {menu[item]:.2f}")
+    print(f"Total amount to pay: Rp {total:.2f}")
