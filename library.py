@@ -1,5 +1,5 @@
 import time
-avl_books =  {"Anon": "The silent patient", "Anon": "Lock Every Door", "Anon": "Fire In The Woods" }
+avl_books =  {"Anon": "The Silent patient", "Anon": "Lock Every Door", "Anon": "Fire In The Woods" }
 while True:
     print("--Welcome to the library Page--")
     print("Loading.... ")
@@ -21,3 +21,14 @@ while True:
         r_book = input("Please Enter the name of the book: " )
         auth = input ("Enter the name of the Author: ")
         avl_books[auth] = [r_book]
+    elif choice == 3:
+        s_book= input(str("Enter the Name of the book: "))
+        if s_book in avl_books:
+            add =input(f"{s_book} found, do you want to add it to the cart? (y/n").lower
+            if add == "y":
+                print("Book added to the cart")
+            else:
+                print("Book not added")
+        else:
+            print ("Book not found, Want to search again? (y/n)")
+            
