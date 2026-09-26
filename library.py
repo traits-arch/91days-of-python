@@ -30,5 +30,15 @@ while True:
             else:
                 print("Book not added")
         else:
-            print ("Book not found, Want to search again? (y/n)")
-            
+            search = ("Book not found, Want to search again? (y/n)")
+            if search == "y":
+                pass
+            else: break
+    elif choice == 4:
+        print(avl_books)
+        pass
+    elif choice == "q":
+        break
+    else: 
+        print ("Invaild Choice detected, Please choose between 1-4")
+        pass
