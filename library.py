@@ -1,12 +1,13 @@
 import time
-avl_books =  {"Anon": "The Silent patient", "Anon": "Lock Every Door", "Anon": "Fire In The Woods" }
+avl_books =  {"Anon": "The Silent patient", "Nemmo": "Lock Every Door", "Carter": "Fire In The Woods" }
+avl_items = list(avl_books.items())
 while True:
     print("--Welcome to the library Page--")
     print("Loading.... ")
     time.sleep(1)
     print("~~ Choose One of The options or enter 'q' to quit. ~~")
-    print("   1. Borrow a book \n 2. Return A Book \n 3. Search for a specific book. \n 4. List all Books available.")
-    choice = input("Enter your Choice: ")
+    print(" 1. Borrow a book \n 2. Return A Book \n 3. Search for a specific book. \n 4. List all Books available.")
+    choice = int(input("Enter your Choice: "))
     if choice == 1:
         b_book = input(str("Enter the name of the book You want to borrow: "))
         auth = "Anon"
@@ -20,7 +21,7 @@ while True:
         auth = "Anon"
         r_book = input("Please Enter the name of the book: " )
         auth = input ("Enter the name of the Author: ")
-        avl_books[auth] = [r_book]
+        avl_books[auth] = r_book
     elif choice == 3:
         s_book= input(str("Enter the Name of the book: "))
         if s_book in avl_books:
@@ -35,8 +36,8 @@ while True:
                 pass
             else: break
     elif choice == 4:
-        print(avl_books)
-        pass
+        for key, value in avl_books.items():
+            print(f"Author: {key}, Book: {value}")
     elif choice == "q":
         break
     else: 
